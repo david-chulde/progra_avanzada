@@ -33,7 +33,36 @@ def triangulo (b,h,y) :
         peri=b+h+y
         print ("El area es:" , área)
         print("El perimetro es: ",peri)
-        a=6
+
+def heptagono(lados):
+    t=360/7
+    peri=lados*7
+    a=lados/(2 * math.tan(t/2)) 
+    área=(lados*a*7)/2
+    print ("El area es:" ,  área)
+    print("El perimetro es: ",peri)
+    print("El apotemea es: ",a)
+
+def octogono(lados):
+    t=360/8
+    peri=lados*8
+    a=lados/(2 * math.tan(t/2)) 
+    área=4*lados*a
+    print ("El area es:" ,  área)
+    print("El perimetro es: ",peri)
+    print("El apotemea es: ",a)
+
+def nonagono(lados):
+    peri=lados*9
+    área=9*(lados**2)/(4 * math.tan(180/2)) 
+    print ("El area es:" ,  área)
+    print("El perimetro es: ",peri)
+
+def decagono(lados):
+    peri=lados*10
+    área=10*(lados**2)/(4 * math.tan(180/10)) 
+    print ("El area es:" ,  área)
+    print("El perimetro es: ",peri)
 
 
 def main(): 
@@ -61,6 +90,22 @@ def main():
             print("El numero de lados ingresado corresponde a un hexagono")
             ra=int(input("ingrese radio: "))
             hexagono(ra)
+        elif opc ==7 :
+            print("El numero de lados ingresado corresponde a un heptagono")
+            lados=float(input("Ingrese longitud de los lados"))
+            heptagono(lados)
+        elif opc ==8 :
+            print("El numero de lados ingresado corresponde a un octagono")
+            lados=float(input("Ingrese longitud de los lados"))
+            octogono(lados)
+        elif opc ==9 :
+            print("El numero de lados ingresado corresponde a un nonagono")
+            lados=float(input("Ingrese longitud de los lados"))
+            nonagono(lados)
+        elif opc ==10 :
+            print("El numero de lados ingresado corresponde a un decagono")
+            lados=float(input("Ingrese longitud de los lados"))
+            decagono(lados)
         elif opc==0:
             print ("Has salido de la aplicación")
             exit()
