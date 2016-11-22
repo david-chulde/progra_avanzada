@@ -33,6 +33,7 @@ def triangulo (b,h,y) :
         peri=b+h+y
         print ("El area es:" , área)
         print("El perimetro es: ",peri)
+        a=6
 
 
 def main(): 
