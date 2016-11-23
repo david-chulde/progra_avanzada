@@ -29,11 +29,14 @@ def hexagono(ra):
     print("El apotema es: ",a)
  
 def triangulo (b,h,y) :
+        archi=open('triangulo.txt','a')
         área = (b * h)/2
         peri=b+h+y
         print ("El area es:" , área)
+        archi.write('\nEl area es:'+str(área))
         print("El perimetro es: ",peri)
-
+        archi.write('\nEl perimetro es:'+str(peri))
+        archi.close()
 def heptagono(lados):
     t=360/7
     peri=lados*7
@@ -51,8 +54,7 @@ def octogono(lados):
     print ("El area es:" ,  área)
     print("El perimetro es: ",peri)
     print("El apotemea es: ",a)
-<<<<<<< HEAD
-=======
+
 
 def nonagono(lados):
     peri=lados*9
@@ -66,7 +68,7 @@ def decagono(lados):
     print ("El area es:" ,  área)
     print("El perimetro es: ",peri)
 
->>>>>>> f6fb47cbf748142176ccc2d41eb16f5263da1639
+
 
 def nonagono(lados):
     peri=lados*9
@@ -87,10 +89,19 @@ def main():
         print("Ingrese numero de lados\n")
         opc = int(input ())
         if opc == 3:
+            
+            archi=open('Triangulo.txt','w')
+            archi.close()
+            archi=open('Triangulo.txt','a')
             print("El numero de lados ingresado corresponde a un triangulo")
+            archi.write("FIGURA TRIANGULO\n")
             b = int ( input ( "introducir la base:" ) )
+            archi.write('\nBASE: '+str(b))
             h = int ( input ( "introducir la altura:" ) )
+            archi.write('\nALTURA: '+str(h))
             y=int(input("introducir los lados"))
+            archi.write('\nLADOS: '+str(y))
+            archi.close()
             triangulo(b,h,y )
         elif opc ==4 :
             print("El numero de lados ingresado corresponde a un cuadrado")
