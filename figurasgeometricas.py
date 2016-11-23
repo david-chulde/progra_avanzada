@@ -51,6 +51,22 @@ def octogono(lados):
     print ("El area es:" ,  área)
     print("El perimetro es: ",peri)
     print("El apotemea es: ",a)
+<<<<<<< HEAD
+=======
+
+def nonagono(lados):
+    peri=lados*9
+    área=9*(lados**2)/(4 * math.tan(180/2)) 
+    print ("El area es:" ,  área)
+    print("El perimetro es: ",peri)
+
+def decagono(lados):
+    peri=lados*10
+    área=10*(lados**2)/(4 * math.tan(180/10)) 
+    print ("El area es:" ,  área)
+    print("El perimetro es: ",peri)
+
+>>>>>>> f6fb47cbf748142176ccc2d41eb16f5263da1639
 
 def nonagono(lados):
     peri=lados*9
