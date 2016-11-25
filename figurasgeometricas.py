@@ -6,13 +6,18 @@ def menu():
     print("digite cero para salir")
 
 def pentagono ( lados,ra ) :
+        archi=open('Pentagono.txt','a')
         peri=lados*5
         lados=lados/2
         a=math.sqrt((ra**2)-(lados**2))
         área = (peri*a)/2
         print("El perimetro es: ",peri)
+        archi.write('\nEl perimetro es:'+str(peri))
         print ("El area es:" , área)
+        archi.write('\nEl area es:'+str(área))
         print("el apotema es: ",a)
+        archi.write("el apotema es: "+str(a))
+        archi.close()
  
 def cuadrado ( Lado ) :
         área = Lado ** 2
@@ -29,7 +34,7 @@ def hexagono(ra):
     print("El apotema es: ",a)
  
 def triangulo (b,h,y) :
-        archi=open('triangulo.txt','a')
+        archi=open('Triangulo.txt','a')
         área = (b * h)/2
         peri=b+h+y
         print ("El area es:" , área)
@@ -104,13 +109,24 @@ def main():
             archi.close()
             triangulo(b,h,y )
         elif opc ==4 :
+            
+            archi=open('Triangulo.txt','w')
+            archi.close()
             print("El numero de lados ingresado corresponde a un cuadrado")
             Lado = int ( input ( "introducir el valor del Lado:" ) )
             cuadrado ( Lado )
         elif opc == 5:
+
+            archi=open('Pentagono.txt','w')
+            archi.close()
+            archi=open('Pentagono.txt','a')
             print("El numero de lados ingresado corresponde a un pentagono")
+            archi.write("FIGURA PENTAGONO\n")
             ra=int(input("ingrese radio: "))
+            archi.write("\nRADIO: "+str(ra))
             lados=int(input("introducir longitud de los lados: " ) )
+            archi.write("\nLONGITUD DE LADOS: "+str(lados))
+            archi.close()
             pentagono ( lados,ra )
         elif opc ==6 :
             print("El numero de lados ingresado corresponde a un hexagono")
