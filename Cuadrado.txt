@@ -1,0 +1,5 @@
+FIGURA CUADRADO
+
+LADO: 6
+El area es:36
+El perimetro es:24

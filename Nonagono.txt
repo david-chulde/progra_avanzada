@@ -1,0 +1,7 @@
+FIGURA NONAGONO
+
+LONGITUD DE LADOS: 7.0
+El area es:-55.25760686766189
+El perimetro es:63.0
+El area es:-54.95405473616829
+El perimetro es:50.0

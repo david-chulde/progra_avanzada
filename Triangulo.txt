@@ -2,6 +2,6 @@ FIGURA TRIANGULO
 
 BASE: 3
 ALTURA: 3
-LADOS: 4
+LADOS: 3
 El area es:4.5
-El perimetro es:10
+El perimetro es:9

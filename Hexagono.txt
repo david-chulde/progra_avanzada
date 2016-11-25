@@ -1,0 +1,6 @@
+FIGURA HEXAGONO
+
+RADIO: 6
+El area es:93.53074360871938
+El perimetro es:36
+el apotema es: 5.196152422706632
